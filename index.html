@@ -1,116 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
-  <title>Portfolio website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
 </head>
 
 <body>
-  <section id="div1">
-    <div class="ordem container d-flex align-items-center justify-content-evenly py-5">
-      <div class="d-flex flex-column">
-        <h1 class="titulo">Olá, Sou Estevam</h1>
-        <h2 class="titulo">Desenvolvedor FullStack</h2>
-        <div class="mt-5">
-          <button class="botao">Contato</button>
-          <div class="pt-5">
-            <button>Linkedin</button>
-            <button>Github</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="assets/img/imagem_perfil_noback-removebg-preview.png" alt="">
+  <header>
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center">
+        <nav>
+          <ul>
+            <li><a href="#intro">Main</a></li>
+            <li><a href="#sobre">About</a></li>
+            <li><a href="#sobre">Skills</a></li>
+            <li><a href="#trabalhos">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="sobre">
-    <div class="container py-5">
-      <h1 class="d-flex justify-content-center chamada"><u>Sobre</u></h1>
-      <div class="d-flex justify-content-evenly">
-        <div class="d-flex align-items-center">
-          <img src="assets/img/imagem perfil.png" alt="" class="tamanho__img">
+  <body>
+    <section id="intro">
+      <div class="container">
+        <div class="chamada">
+          <b>
+            Full Stack Developer<br>
+          </b>
+          Estevam<br>
+          Torezani
         </div>
-        <div class="w-50">
-          <div class="titulo mt-5">Estevam</div>
-          <div class="texto__sobre mt-4">
-            Estou na busca da primeira vaga como desenvolvedor web, através da minha formação, adquiri experiências que
-            se assemelham fortemente com o mercado de trabalho e tenho confiança de que conseguirei me adequar a
-            qualquer ambiente de trabalho, tenho como prova dos meus conhecimentos de hard skills, meus projetos no
-            GitHub e já demonstrei minhas soft kills durante vários projetos realizados em grupo que se baseiam em
-            metodologias ágeis. Dito isso, tenho forte desejo de botar meus conhecimentos em prática dentro de uma
-            empresa. Como júnior, tenho disposição e vontade de aprender mais e mais.
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="d-flex pt-5 ordem">
+          <div class="info col-12 col-md-3">ABOUT</div>
+          <div class="d-flex flex-column">
+            <div class="mb-5">
+              <h1 class="titulo mb-4">INFO</h1>
+              <p class="info_desc col-12 col-md-9">
+                I'm a web developer with strong skills in HTML, JavaScript, Node.js, and PHP. My passion for programming
+                began
+                early, and I have experience developing high-quality webpages. I have a solid understanding of
+                english and a proven ability to work well in teams and under tight deadlines. I am able to create
+                responsive, efficient, and secure web applications. I am
+                constantly refining my web development skills and am always eager to learn new things.
+              </p>
+            </div>
+            <!-- <div>
+              <h1 class="titulo mb-4">Courses</h1>
+              <p class="info_desc col-12 col-md-9">
+
+              </p>  
+            </div> -->
+          </div>
+        </div>
+        <div class="d-flex mt-5 ordem">
+          <div class="info col-12 col-md-3">SKILLS</div>
+          <div class="d-flex flex-column ">
+            <div class="mb-5">
+              <h1 class="titulo mb-4">Programming</h1>
+              <p class="info_desc col-12 col-md-9">
+                Node.JS <br>
+                PHP <br>
+                SQL <br>
+                JavaScript <br>
+                React <br>
+                CSS <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trabalhos">
+      <div class="container">
+        <div class="titulo">Projects</div>
+        <div class="trabalhos-grid mt-5">
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://getpowersolar.com.br/" target="_blank"> GetPower Solar</a>
+            </div>
+            <h3 class="desc_trab">Complete Website for GetPower Solar company</h3>
+          </div>
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://academiadosol.com.br/lp/executivo/" target="_blank">Website for course sales</a>
+            </div>
+            <h3 class="desc_trab">Fully complete LP for selling courses</h3>
+          </div>
+          <!-- <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="#">WordPress Website Blog for GetPower Solar</a>
+            </div>
+            <h3 class="desc_trab">WordPress project for GetPower Solar Blog</h3>
+          </div> -->
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://www.evartel.com.br/" target="_blank">Evartel Controle de Ponto</a>
+            </div>
+            <h3 class="desc_trab">Face Recognition Application for attendance control</h3>
+          </div>
+        </div>
+        <div class="trabalhos-grid mt-5 pb-5">
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://github.com/estevamtore/Login-System" target="_blank"> Login-System</a>
+            </div>
+            <h3 class="desc_trab">Login System with Node.js </h3>
+            <!-- <img src="trabalho1.jpg" alt="Trabalho 1"> -->
+          </div>
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://github.com/estevamtore/Projeto_Calculadora_JS" target="_blank">Projeto Calculadora</a>
+            </div>
+            <h3 class="desc_trab">Calculator with HTML, CSS and JS vanilla</h3>
+            <!-- <img src="trabalho1.jpg" alt="Trabalho 2"> -->
+          </div>
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://github.com/estevamtore/PicPro" target="_blank">PicPro</a>
+            </div>
+            <h3 class="desc_trab">Project created by me working with PicPay and Kenzie Academy companies with
+              HTML/CSS/JS</h3>
+            <!-- <img src="trabalho1.jpg" alt="Trabalho 3"> -->
+          </div>
+          <div class="quadro d-flex flex-column align-items-left justify-content-evenly">
+            <div class="nometrab mb-5">
+              <a href="https://github.com/estevamtore/TabelaDinamica" target="_blank">Dynamic tables</a>
+            </div>
+            <h3 class="desc_trab">Dynamic table built in React</h3>
+            <!-- <img src="trabalho1.jpg" alt="Trabalho 4"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <footer id="footer">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center pt-5 ordem">
+        <div class="chamada_footer col-12 col-md-3">CONTACT</div>
+        <div class="d-flex col-12 col-md-6 justify-content-evenly mt-5 ordem dados">
+          <div class="me-3 disp_info">
+            <div class="info mb-1">Espírito Santo, Brasil</div>
+            <div class="info mb-1">+55 027 99795 4552</div>
+            <div class="info mb-1">estevamtorezani@hotmail.com</div>
+          </div>
+          <div class="me-3 disp_info">
+            <div class="info mb-1">Likedin</div>
+            <div class="info mb-1">estevamtorezani</div>
+            <div class="info mb-1"><a href="https://www.linkedin.com/in/estevam-torezani/" target="_blank">link</a>
+            </div>
+          </div>
+          <div class="disp_info">
+            <div class="info mb-1">Github</div>
+            <div class="info mb-1">estevamtore</div>
+            <div class="info mb-1"><a href="https://github.com/estevamtore" target="_blank">link</a></div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <p class="text-center info mt-5">&copy; Estevam</p>
+  </footer>
 
-  <section id="trabalhos">
-    <div class="container py-5">
-      <h1 class="text-center">Trabalhos</h1>
-      <div class="text-center "> Aqui estão alguns projetos em que trabalhei.</div>
-      <div class="d-flex justify-content-evenly pt-5">
-        <div class="d-flex flex-column">
-          <div class="img__chamada mx-3"><img src="assets/img/logo-chamada-get.svg" alt="Getpower-logo"
-              class="dim__logo"></div>
-          <h1 class="titulo mx-3 pt-5">
-            getpower solar
-          </h1>
-          <div class="descr__trab mx-3 pt-3">
-            site completo feito nas tecnologias HTML, CSS e JavaScript.
-            Focado em...
-          </div>
-        </div>
-        <div class="w-50">
-          <img src="./assets/img/site-getpower.png" alt="img-getpower" class="img__trab">
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-evenly pt-5">
-        <div class="d-flex flex-column  w-50">
-          <div class="img__chamada mx-3"><img src="assets/img/logo-evartel.png" alt="logo Evartel" class="dim__logo">
-          </div>
-          <h1 class="titulo mx-3 pt-5">
-            Evartel
-          </h1>
-          <div class="descr__trab mx-3 pt-5">
-            site completo feito nas tecnologias HTML, CSS e JavaScript.
-            Focado em...
-          </div>
-        </div>
-        <div class="w-50">
-          <img src="./assets/img/site-evartel.png" alt="img-getpower" class="img__trab">
-        </div>
-      </div>
-
-      <div class="d-grid">
-        <a href="https://github.com/estevamtore/Validacao_doguito" class="work__img">
-          <img src="assets/img/projeto 1.png" alt="projeto um" class="tam__proj">
-        </a>
-        <a href="https://github.com/estevamtore/alura-studies" class="work__img">
-          <img src="assets/img/projeto 2.png" alt="projeto dois" class="tam__proj">
-        </a>
-        <a href="https://github.com/estevamtore/Aluroni" class="work__img">
-          <img src="assets/img/projeto 3.png" alt="projeto tres" class="tam__proj">
-        </a>
-        <a href="https://github.com/estevamtore/Apeperia" class="work__img">
-          <img src="assets/img/projeto 4.png" alt="projeto quatro" class="tam__proj">
-        </a>
-        <a href="https://github.com/estevamtore/AluraMidi" class="work__img">
-          <img src="assets/img/projeto 5.png" alt="projeto cinco" class="tam__proj">
-        </a>
-        <a href="https://github.com/estevamtore/PicPro" class="work__img">
-          <img src="assets/img/projeto 6.png" alt="projeto seis" class="tam__proj">
-        </a>
-      </div>
-    </div>
-  </section>
+  <script src="script.js"></script>
 </body>
 
 </html>

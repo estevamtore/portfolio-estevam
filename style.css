@@ -50,7 +50,7 @@ nav ul li a:hover {
 #intro {
   padding-top: 80px;
   height: 100vh;
-  background-image: url(/img/computador.jpg);
+  background-image: url(img/computador.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
